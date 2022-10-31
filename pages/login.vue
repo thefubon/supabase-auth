@@ -38,8 +38,8 @@ onMounted(() => {
   <div class="max-w-lg mx-auto mt-8">
     <h1 class="text-3xl font-black text-white">Fubon Nuxt Demo</h1>
     <p class="mt-4">
-      Welcome to the Fubon Nuxt demo. Any YouTube tutorials relating to Nuxt
-      will be made to this project.
+      Добро пожаловать на демонстрационный сайт Fubon Nuxt. Любые обучающие материалы YouTube, связанные с Nuxt
+      будут привязаны к этому проекту.
     </p>
     <form
       @submit.prevent="() => (isSignUp ? signUp() : login())"
@@ -61,16 +61,16 @@ onMounted(() => {
         type="submit"
         class="p-2 font-medium text-white bg-green-500 rounded hover:bg-green-400"
       >
-        <span v-if="isSignUp"> Sign up </span>
-        <span v-else> Log in </span>
+        <span v-if="isSignUp"> Зарегистрироваться </span>
+        <span v-else> Войти </span>
       </button>
     </form>
     <button
       @click="isSignUp = !isSignUp"
       class="w-full mt-8 text-sm text-center underline text-slate-300"
     >
-      <span v-if="isSignUp"> Have an account? Log in instead </span>
-      <span v-else> Create a new account </span>
+      <span v-if="isSignUp"> У вас есть учетная запись? ТогдаВойдите </span>
+      <span v-else> Создайте новую учетную запись </span>
     </button>
   </div>
 </template>
