@@ -6,6 +6,7 @@ const email = ref('')
 const password = ref('')
 const isSignUp = ref(false)
 const client = useSupabaseClient()
+
 const signUp = async () => {
   const { user, error } = await client.auth.signUp({
     email: email.value,
@@ -41,6 +42,7 @@ onMounted(() => {
       Добро пожаловать на демонстрационный сайт Fubon Nuxt. Любые обучающие материалы YouTube, связанные с Nuxt
       будут привязаны к этому проекту.
     </p>
+
     <form
       @submit.prevent="() => (isSignUp ? signUp() : login())"
       class="flex flex-col gap-2 mt-16"
