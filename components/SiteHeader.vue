@@ -17,8 +17,8 @@ const client = useSupabaseClient()
         >Demo Blog</NuxtLink
       >
     </nav>
-    <div>
-      Hello {{ user?.email[0] }}
+    <div v-if="user" class="flex gap-2">
+      Hello <span class="flex w-6 h-6 rounded-full bg-white justify-center items-center uppercase font-bold text-black">{{ user?.email[0] }}</span>
     </div>
     <button
       v-if="user"

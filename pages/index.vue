@@ -5,8 +5,8 @@ const client = useSupabaseClient()
 <template>
   <main>
     <div v-if="user">
-      <h1 class="text-3xl font-black text-white">LearnVue Demo</h1>
-      <p class="mt-4">Welcome to the LearnVue demo area.</p>
+      <h1 class="text-3xl font-black text-white">Fubon Demo</h1>
+      <p class="mt-4">Welcome to the Fubon demo area.</p>
       <p class="mt-4">
         The demos are separated by type. Nuxt-specific tutorials have their own
         live Nuxt site demo, while other components are in an Astro app!

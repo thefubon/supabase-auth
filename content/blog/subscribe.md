@@ -1,10 +1,10 @@
 ---
-title: Subscribe to LearnVue
+title: Subscribe to Fubon
 description: some mildly spicy takes
 author: Matt Maribojoc
 ---
 
-# Subscribe to LearnVue
+# Subscribe to Fubon
 
 These are some of my hot takes...
 

@@ -36,18 +36,11 @@ onMounted(() => {
 
 <template>
   <div class="max-w-lg mx-auto mt-8">
-    <h1 class="text-3xl font-black text-white">LearnVue Nuxt Demo</h1>
+    <h1 class="text-3xl font-black text-white">Fubon Nuxt Demo</h1>
     <p class="mt-4">
-      Welcome to the LearnVue Nuxt demo. Any YouTube tutorials relating to Nuxt
+      Welcome to the Fubon Nuxt demo. Any YouTube tutorials relating to Nuxt
       will be made to this project.
     </p>
-    <NuxtLink
-      to="https://www.youtube.com/playlist?list=PLHIhzV3yZ5WbvbJhEbZysgmpbsLYR0Q34"
-      target="_blank"
-      class="inline-block px-4 py-2 mt-4 font-medium text-white rounded bg-green hover:bg-green-400"
-    >
-      Nuxt Video Playlist
-    </NuxtLink>
     <form
       @submit.prevent="() => (isSignUp ? signUp() : login())"
       class="flex flex-col gap-2 mt-16"
