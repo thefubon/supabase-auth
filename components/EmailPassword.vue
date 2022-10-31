@@ -26,7 +26,7 @@ const password = ref('')
       class="p-2 bg-gray-600 rounded"
     />
     <button type="submit" class="p-2 text-white bg-green-500 rounded">
-      {{ callToAction }}
+      {{ callToAction }} Войти
     </button>
   </form>
 </template>
