@@ -7,25 +7,26 @@ const client = useSupabaseClient()
   <header class="container flex justify-between items-center w-full h-16 py-8">
     <a href="/" class="flex items-center hover:opacity-80">
       <img src="/logo-dark.svg" class="h-[24px] mr-2" />
-      <span class="text-lg font-extrabold text-white"> Learn</span>
-      <span class="mr-2 text-lg font-extrabold text-green">Vue</span>
+      <span class="text-lg font-extrabold text-white"> Fubon</span>
+      <span class="mr-2 text-lg font-extrabold text-green">Auth</span>
     </a>
     <nav class="ml-4 text-sm font-medium">
       <NuxtLink
         to="/blog"
-        class="px-2 py-1 ml-auto mr-1 text-sm font-medium rounded hover:bg-charcoal-600 hover:text-white"
+        class="px-2 py-1 mr-1 text-sm font-medium rounded hover:bg-charcoal-600 hover:text-white"
         >Demo Blog</NuxtLink
       >
     </nav>
     <div v-if="user" class="flex gap-2">
       Hello <span class="flex w-6 h-6 rounded-full bg-white justify-center items-center uppercase font-bold text-black">{{ user?.email[0] }}</span>
-    </div>
-    <button
-      v-if="user"
+
+      <button
       @click="client.auth.signOut()"
       class="px-2 py-1 text-sm font-medium rounded hover:bg-charcoal-600"
     >
       Log out
     </button>
+    </div>
+    
   </header>
 </template>
