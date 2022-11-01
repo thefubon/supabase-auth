@@ -3,7 +3,7 @@ const user = useSupabaseUser()
 const client = useSupabaseClient()
 </script>
 <template>
-  <main class="landscape:hidden">
+  <main class="landscape:hidden">>
     <div v-if="user">
       <h1 class="text-3xl font-black text-white">Fubon Demo</h1>
       <p class="mt-4">Welcome to the Fubon demo area.</p>
@@ -15,6 +15,11 @@ const client = useSupabaseClient()
 
     <div v-else >
       Hello
+    </div>
+
+    <div class="portrait:hidden">
+    This experience is designed to be viewed in Portrait. Please rotate your
+      device to view the site.
     </div>
    
     <div class="flex gap-4 mt-8">
