@@ -3,7 +3,7 @@ const user = useSupabaseUser()
 const client = useSupabaseClient()
 </script>
 <template>
-  <main>
+  <main class="landscape:hidden">
     <div v-if="user">
       <h1 class="text-3xl font-black text-white">Fubon Demo</h1>
       <p class="mt-4">Welcome to the Fubon demo area.</p>
