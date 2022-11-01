@@ -11,21 +11,14 @@ const client = useSupabaseClient()
       <span class="mr-2 text-lg font-extrabold text-green">Auth</span>
     </a>
     <nav class="ml-4 text-sm font-medium">
-      <NuxtLink
-        to="/blog"
-        class="px-2 py-1 mr-1 text-sm font-medium rounded hover:bg-charcoal-600 hover:text-white"
-        >Demo Blog</NuxtLink
-      >
+      <NuxtLink to="/blog" class="px-2 py-1 mr-1 text-sm font-medium rounded hover:bg-charcoal-600 hover:text-white">Блог</NuxtLink>
     </nav>
-    <div v-if="user" class="flex gap-2 items-center">
-      Hello <span class="flex w-6 h-6 rounded-full bg-white justify-center items-center uppercase font-bold text-black">{{ user?.email[0] }}</span>
+    <div class="flex gap-2 items-center">
+      <div v-if="user">
+        Привет <span class="flex w-6 h-6 rounded-full bg-white justify-center items-center uppercase font-bold text-black">{{ user?.email[0] }}</span>
+      </div>
 
-      <button
-      @click="client.auth.signOut()"
-      class="px-2 py-1 text-sm font-medium rounded hover:bg-charcoal-600"
-    >
-      Log out
-    </button>
+      <button @click="client.auth.signOut()" class="px-2 py-1 text-sm font-medium rounded hover:bg-charcoal-600">Выйти</button>
     </div>
     
   </header>
